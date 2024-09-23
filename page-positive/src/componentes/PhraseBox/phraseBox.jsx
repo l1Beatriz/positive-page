@@ -1,6 +1,23 @@
 import "./styles.css";
+import axios from "axios";
+import { useState} from "react";
 
 export default function PhraseBox() {
+    const [phrase, setPhrase] = useState([])
+
+   async function getPhrase() {
+        try {
+            const response = await axios.get("http://localhost:3000/frases");
+            setPhrase(response);
+          } catch (error) {
+            console.error(error);
+          }
+    };
+
+    function handleClick() {
+        getPhrase();
+    };
+
     return (
         <div className="container__phrase__box">
             <div>
@@ -9,10 +26,10 @@ export default function PhraseBox() {
             </div>
 
             <div className="container__phrase">
-                <p>Teste</p>
+                <p>{phrase}</p>
             </div>
 
-            <button className="button">Gerar Frases</button>
+            <button className="button" onClick={handleClick}>Gerar Frases</button>
         </div>
     )
 }
