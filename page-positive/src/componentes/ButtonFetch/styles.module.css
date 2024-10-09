@@ -1,0 +1,19 @@
+.button {
+    padding: 10px;
+    font-family: var(--second-title);
+    background-color: #fff;
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: var(--shadow-box);
+
+    margin-top: 30px;
+    width: 9em;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button:active {
+    transform: scale(0.95); 
+    background-color: #e0e0e0; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
+}

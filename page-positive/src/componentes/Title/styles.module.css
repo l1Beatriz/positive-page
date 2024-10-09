@@ -1,0 +1,38 @@
+.main_title {
+    font-family: var(--main-font);
+    color: #fff;
+    font-size: 2em;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+
+    position: relative;
+    top: 15px; 
+}
+
+.second__title {
+    font-family: var(--second-title);
+    font-size: 3.5em;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: rgba(0, 0, 0, 0.3647058824) 2px 3px 2px;
+
+}
+
+@media (max-width: 600px) {
+    .second__title {
+        font-size: 2.5em; 
+        text-shadow: rgba(0, 0, 0, 0.3647058824) 1px 1.5px 1px; 
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .main_title {
+        font-size: 1.8em; 
+        top: 12px; 
+    }
+
+    .second__title {
+        font-size: 3em; 
+    }
+}

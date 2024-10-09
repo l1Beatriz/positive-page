@@ -1,0 +1,11 @@
+.image {
+    width: 110%;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .image {
+        display: block; 
+        width: 100%; 
+    }
+}

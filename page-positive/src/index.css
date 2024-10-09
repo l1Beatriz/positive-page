@@ -1,3 +1,10 @@
+:root {
+  --main-font: "Bad Script", cursive;
+  --second-title: "Bebas Neue", sans-serif;
+  --shadow-box: 2px 5px 2px #cc9815;
+}
+
+
 * {
   margin: 0;
   padding: 0;

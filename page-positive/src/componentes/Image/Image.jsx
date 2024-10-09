@@ -1,10 +1,10 @@
-import "./styles.css";
+import style from "./styles.module.css";
 import stayPositive from "../../assets/stay-positive.svg";
 
 export default function Image() {
     return (
         <div>
-            <img className="image" src={stayPositive} alt="" />
+            <img className={style.image} src={stayPositive} alt="image positive" />
         </div>
     )
 }
