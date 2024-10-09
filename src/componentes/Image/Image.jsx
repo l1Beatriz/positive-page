@@ -4,7 +4,7 @@ import stayPositive from "../../assets/stay-positive.svg";
 export default function Image() {
     return (
         <div>
-            <img className={style.image} src={stayPositive} alt="image positive" />
+            <img className={style.image} src={stayPositive} alt="image stay positive" />
         </div>
     )
 }
