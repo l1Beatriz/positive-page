@@ -39,6 +39,8 @@ Inicie o servidor
 **Back-end:** Node, Express, MongoDB, Mongoose.
 
 
-## Deploy da página
+## Referência
 
- - https://positive-page.vercel.app/
+ - [deploy da página](https://positive-page.vercel.app/)
+ - [API utilizada](https://positive-api.onrender.com)
+
